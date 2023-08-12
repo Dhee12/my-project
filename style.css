@@ -1,0 +1,594 @@
+/* Body of the Whole Document */
+body {
+    background-color: #BFCCB5;
+    height: 100%;
+}
+
+/* The Signup and SignIN page container */
+.container {
+    top: 9%;
+    left: 13%;
+    width: 80%;
+    height: 450px;
+    align-self: center;
+    background-color:#F0F0F0;
+    position: absolute;
+    border-radius: 5%;
+}
+.row {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* Each box of the Sign page. i.e The rabbit pic and fill in details side */
+.col1 {
+    height: 430px;
+    background-color: #F0F0F0;
+    border-radius: 10%;
+}
+
+/* The rabbit pic at the left side of the sign Page */
+.rabbitpic{
+    height: 430px;
+    width: 100%;
+    border-radius: 10%;
+}
+.rabbitpic2{
+    display: none;
+}
+.fillbox {
+    top: 40%;
+    left: 55%;
+    width: 350px;
+    position: absolute;
+}
+.fillbox button {
+    margin: 30px;
+    width: 300px;
+}
+
+/* The Text in the column of the pages */
+
+.col h1 {
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top:25%;
+}
+.col p {
+    margin-left: 57%;
+}
+
+/* Button for the LeaderBoard */
+.leader {
+    top:85%;
+    left: 77%;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 10%;
+    font-size: 1.2rem;
+    background-color: #7AA874;
+}
+.col span {
+    color:blue;
+    cursor: pointer;
+}
+
+/* This is mobile CSS for the SignIN Button */
+@media screen and (max-width: 720px) {
+    .container {
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        height: 450px;
+        align-self: center;
+        background-color:#F0F0F0;
+        position: absolute;
+        border-radius: 5%;
+    }
+    .rabbitpic{
+        display: none;
+    }
+    .rabbitpic2{
+        display: block;
+        height: 430px;
+        width: 80%;
+    }
+    .fillbox {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        width: 200px;
+    }
+    .fillbox button {
+        margin: 15px;
+        width: 100px;
+    }
+
+    .col p {
+        margin-left: 10%;
+    }
+    .leader {
+        position: absolute;
+        bottom: 5%;
+        left: 55%;
+        width: 150px;
+        height: 40px;
+        border-radius: 10%;
+        font-size: 1rem;
+        background-color: #7AA874;
+    }
+    .homeBtn{
+        position: absolute;
+        top: 52%;
+        left: 72%;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* This is where the header starts from */
+
+/* NavBar/Header for each of the pages */
+
+.headContainer {
+    position: absolute;
+    width: 100%;
+    height: 24%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* The SignUp and SignIn button on the header */
+.but {
+    margin: 7px;
+    border-radius: 10%;
+    background-color: #7AA874;
+    font-size: 1.3rem;
+    font-family: 'Bruno Ace SC';
+}
+.but:hover{
+    background-color: #BFCCB5;
+    transition: 1s;
+}
+.but1 {
+    margin: 7px;
+    border-radius: 10%;
+    background-color: #7AA874;
+    font-size: 1.3rem;
+    font-family: 'Bruno Ace SC';
+}
+
+/* The Logo on the header */
+.logo2 {
+    width: 200px;
+    height: 140px;
+}
+.mobile_btn{
+    display: none;
+}
+
+/* The Beginning of the Footer CSS */
+.container-footer {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 7%;
+    bottom: 0%;
+    left: 0%;
+    z-index: 2;
+}
+/* The Footer column of each Page */
+.ftBtn {
+    text-align: center;
+    color: white;
+}
+.ftBtn:hover {
+    color: black;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+    transition: 2s;
+    transform: rotateX(360deg);
+}
+.ftBtn1{
+   display: none;
+}
+
+/* The button in each column of the  page */
+.ftBtn button{
+    width: 100%;
+    text-decoration: none;
+    border-width: 0;
+
+}
+
+/* Mobile view for the Footer and Header */
+@media screen and (max-width: 720px) {
+     .body {
+        margin:0;
+        background-color: aqua;
+    }
+    /* The Beginning of Header Code */
+    .headContainer {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    
+    /* The SignUp and SignIn button on the header */
+    .but {
+        margin: 7px;
+        border-radius: 10%;
+        background-color: #7AA874;
+        font-size: 1rem;
+        font-family: 'Bruno Ace SC';
+    }
+    .but1{
+        display: none;
+    }
+    .but:hover{
+        background-color: #BFCCB5;
+        transition: 1s;
+    }
+    
+    /* The Logo on the header */
+    .logo2 {
+        width: 150px;
+        height: 100px;
+    }
+    /* The End of the Header Code */
+
+
+    /* The Beginning of the footer Code */
+    .footer1{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2); 
+        width: 100%;
+        height: 28vh;
+        top: 20%;
+        z-index: 2;
+        left: -100%;
+        transition: left 1s;
+    }
+    .container-footer {
+        position: absolute;
+        top:0%;
+    }
+    .rowBtn{
+        width: 100%;
+        top: 20%;
+        display: inline-block;
+    }
+
+    .ftBtn{
+        margin-top: 15px;
+    }
+    .ftBtn1{
+        display: block;
+    }
+    .active {
+        left: 0;
+    }
+    /* The Menu Toggle Button  */
+    .mobile_btn{
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        cursor: pointer;
+    }
+
+  }
+/* The Header Ends Here */
+
+/* The body of the Homepage */
+.bodypage {
+    position: absolute;
+    width: 37%;
+    left: 58%;
+    height: 500px;
+    background-color: #BFCCB5;
+    padding: 0;
+    /* background: linear-gradient(45deg, #1e5799, #7db9e8); */
+} 
+/* The Image I designed at the right side of the homepage */
+.BGimg {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: 600px;
+    transform: rotate(90deg);
+}
+
+/* The Peter Rabbit and Quiz app Words on the HomePage */
+.content{
+    position: absolute;
+    top: 43%;
+    left: 10%;
+}
+.content h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 6rem;
+}
+.content h3{
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+}
+
+/* The Family peter rabbit pic at the right side of the homepage */
+
+.HomePic{
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    top: 37%;
+    right: 0%;
+    z-index: 2;
+}
+.HomePic:hover{
+    transform: rotateY(360deg);
+    transition: 3s;
+}
+.copyRight{
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .content{
+        position: absolute;
+        top: 25%;
+        left: 5%;
+    }
+    .content h1{
+        font-family: 'Anton', sans-serif;
+        font-size: 5rem;
+    }
+    .content h3{
+        font-family: 'Play', sans-serif;
+        font-size: 2rem;
+    }
+
+    .bodypage {
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        width: 500px;
+        height: 200px;
+        background-color: #BFCCB5;
+        padding: 0;
+        /* background: linear-gradient(45deg, #1e5799, #7db9e8); */
+    } 
+    .HomePic{
+        position: absolute;
+        width: 380px;
+        height: 280px;
+        bottom: 10%;
+        left:0%;
+        z-index: 2;
+    }
+    .HomePic:hover{
+        transform: rotateY(360deg);
+        transition: 3s;
+    }
+    .BGimg {
+        display: none;
+    }
+    .copyRight{
+        position: absolute;
+        display: block;
+        bottom: 0%;
+        text-align: center;
+        width: 100%;
+        background-color: #BFCCB5;
+        color: black;
+    }
+}
+
+/* The Styles written here is for the English page */
+
+.Engbutton {
+    position: absolute;
+    bottom: 30%;
+    align-items: center;
+    padding-left: 100px; 
+}
+.Engbutton1 button{
+    width: 300px;
+    height: 40px;
+    border-radius: 15%;
+}
+.EngBtn{
+    position: absolute;
+    bottom: 20%;
+    align-items: center;
+    padding-left: 100px; 
+}
+.EngBtn1 button{
+    width: 300px;
+    height: 40px;
+    border-radius: 15%;
+}
+.buttonCorrect{
+    background-color: green;
+}
+.buttonWrong {
+    background-color: red;
+}
+.buttonDefaultColor{
+    background-color: white;
+}
+.Question {
+    padding-left: 0;
+    position: absolute;
+    top: 33%;
+    left: 9%;
+}
+/* The Next Button Style */
+.time{
+    position: absolute;
+    bottom: 10%;
+    right: 4%;
+    padding-left: 10px;
+    width: 70px;
+}
+.arrow {
+    width: 50px;
+}
+/* The CSS styling for the mobile responsiveness for The Questions page */
+@media screen and (max-width: 720px){
+    .Question {
+        padding-left: 0;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+    .Engbutton {
+        position: absolute;
+        bottom: 45%;
+        left: 0%;
+        padding-left: 50px; 
+        display: inline-block;
+    }
+    .Engbutton1 {
+        margin-top: 10%;
+    }
+    .EngBtn {
+        position: absolute;
+        bottom: 25%;
+        left: 0%;
+        padding-left: 50px; 
+        display: inline-block;
+    }
+    .EngBtn1 {
+        border-radius: 15%;
+        margin-top: 10%;
+    }
+    .Engbutton1 button {
+        width: 300px;
+    }
+    .EngBtn1 button {
+        width: 300px;
+    }
+}
+
+/* The Table in the leader table */
+
+table{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+}
+
+th {
+    font-family: 'Lucida Sans';
+    font-size: 1.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.TableBody tr {
+    text-align: center;
+    font-size: 1rem;
+}
+.name {
+    border-radius: 10%;
+    cursor: pointer;
+}
+.tableHead{
+    position: absolute;
+    top: 10%;
+    left:25%;
+    font-size: 1.8rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.nameBtn1{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 2%;
+    width:150px;
+    border-radius: 10%;
+}
+.nameBtn2{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 2%;
+    width:150px;
+    border-radius: 10%;
+}
+.nameBtn3{
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 2%;
+    width:150px;
+    border-radius: 10%;
+}
+.nameBtn4{
+    position: absolute;
+    display: block;
+    top: 70%;
+    left: 2%;
+    width:150px;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 720px){
+    .tableHead{
+        display: none;
+    }
+    .mathCol{
+        display: none;
+    }
+    .mathCol1{
+        display: block;
+    }
+    .nameBtn1{
+        position: absolute;
+        display: block;
+        top:20%;
+        left: 2%;
+        width: 80px;
+    }
+    .nameBtn2{
+        position: absolute;
+        display: block;
+        top:20%;
+        left: 25%;
+        width: 100px;
+    }
+    .nameBtn3{
+        position: absolute;
+        display: block;
+        top:20%;
+        left: 55%;
+        width: 80px;
+    }
+    .nameBtn4{
+        position: absolute;
+        display: block;
+        top:20%;
+        left: 80%;
+        width: 80px;
+    }
+}
+
+/* The Instruction Page of the Quiz APP */
+
+.InstHead{
+    margin-top: 3%;
+    text-align: center;
+}
+.InstBody{
+    margin-top: 5%;
+    text-align: center;
+    line-height: 2;
+}
+
+.InstPara{
+    font-size: 1.3rem;
+}
